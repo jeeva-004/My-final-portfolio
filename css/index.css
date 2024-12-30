@@ -1,0 +1,249 @@
+body{
+   height: 100%;
+}
+/* hero  section*/
+
+ .hero-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+ }
+ 
+ .content {
+    flex: 1;
+    padding: 30px 100px;
+    justify-self: center;
+ }
+ 
+ .content h1 {
+    font-size: 1.8em;
+    line-height: 1.3em;
+ }
+ 
+ #hi {
+    color: #332e2e;
+    font-size: 1em;
+ }
+ 
+ .content h2 {
+    font-size: 1.3em;
+    opacity: .8;
+    color: transparent;
+    background: linear-gradient(#7d2ae8, #6e28c9);
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-position: -600px 0;
+    animation: animateText 6s linear infinite;
+ }
+ 
+ @keyframes animateText {
+ 
+    0%,
+    95%,
+    100% {
+       background-position: -550px 0;
+    }
+ 
+    65%,
+    85% {
+       background-position: 0 0;
+    }
+ }
+ 
+ 
+ .typing-text {
+    position: relative;
+    font-size: 1.1em;
+ }
+ 
+ .typing-text:after {
+    content: "";
+    background-color: #7d2ae8;
+    position: absolute;
+    top: 5px;
+    width: calc(10%+0px);
+    color: #7d2ae8;
+    height: 65%;
+    border-left: 3px solid #7d2ae8;
+    right: 276px;
+    animation: cursor .8s infinite;
+ }
+ 
+ @keyframes cursor {
+ 
+    to {
+       border: 2px solid #7d2ae8;
+    }
+ }
+ 
+ .content h1 {
+    color: #7d2ae8;
+ }
+ 
+ .content p {
+    font-size: .89em;
+    color: #555;
+    font-weight: 550;
+    margin: 25px 0px;
+ }
+ 
+ .btn-group {   
+    display: flex;
+    column-gap: 25px;
+ }
+ 
+ .btn-group a {
+    text-decoration: none;
+    color: #555;
+    width: 35%;
+    text-align: center;
+    padding: 5px 10px;
+ }
+ 
+ .btn-group :nth-child(1) {
+    background-color: #7d2ae8;
+    border: 2px solid #7d2ae8;
+    font-size: .8em;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 10px;
+    transition: .3s;
+ }
+ 
+ .btn-group :nth-child(1):hover {
+    background-color: transparent;
+    color: #7d2ae8;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px #555;
+ }
+ 
+ .btn-group :nth-child(2) {
+    background-color: transparent;
+    font-size: .8em;
+    font-weight: 600;
+    color: #7d2ae8;
+    border: 2px solid #7d2ae8;
+    border-radius: 10px;
+    transition: .3s;
+ }
+ 
+ .btn-group :nth-child(2):hover {
+    background-color: #7d2ae8;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px #7d2ae8;
+ }
+ 
+ .image {
+    align-self: end;
+    width:45%;
+    height: 550px;
+ }
+
+ @media screen and (max-width:768px) {
+   .content {
+      padding: 0px 20px 30px;
+      /* flex: 1; */
+      justify-self: center;
+   }
+   .image {
+      margin-top: 105px;
+      align-self: start; 
+      width:43%;
+      height: 350px;
+   }
+   .typing-text:after {
+      content: "";
+      background-color: #7d2ae8;
+      position: absolute;
+      top: 5px;
+      width: calc(10%+0px);
+      color: #7d2ae8;
+      height: 70%;
+      border-left: 3px solid #7d2ae8;
+      right: 120px;
+      animation: cursor .8s infinite;
+   }
+  .content h1 {
+      font-size: 1.5em;
+      line-height: 1.5em;
+   }
+   
+   #hi {
+      color: #332e2e;
+      font-size: 1em;
+   }
+   .content p {
+      font-size: .89em;
+      color: #555;
+      font-weight: 550;
+      margin: 15px 0px;
+   }
+   
+ }
+
+ @media screen and (max-width:320px) {
+   .hero-section{
+      width:100%;
+      margin-top: 60px;
+      display:flex;
+      flex-direction: column;
+   }
+   .content{
+      order:1;
+   }
+   .hero-section img{
+      width: 100%;
+      height: 350px;
+      align-self: center;
+   }
+   .btn-group{
+      display: flex;
+      row-gap: 15px;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+   }
+   .btn-group a{
+      width: 75%;
+   }
+   .content {
+    justify-self: center;
+ }
+ 
+ .content h1 {
+    font-size: 1.3em;
+    line-height: 1.2em;
+    text-align: center;
+ }
+ 
+ #hi {
+    color: #332e2e;
+    font-size: .9em;
+    line-height: 1.3em;
+ }
+ 
+ .content h2 {
+    font-size: 1em;
+    text-align: center;
+ }
+ .content p {
+   font-size: .7em;
+   color: #555;
+   font-weight: 550;
+   margin: 10px 0px;
+   text-align: center;
+}
+ .typing-text:after {
+   content: "";
+   background-color: #7d2ae8;
+   position: absolute;
+   top: 5px;
+   width: calc(10%+0px);
+   color: #7d2ae8;
+   height: 65%;
+   border-left: 3px solid #7d2ae8;
+   right: 30px;
+}
+ }
